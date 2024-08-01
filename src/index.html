@@ -1,0 +1,719 @@
+<!doctype html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tailwind 2024</title>
+		<link rel="stylesheet" href="./css/output.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body class="h-full">
+		<div class="wrapper flex min-h-full flex-col">
+			<!-- Header -->
+			<header class="flex h-40 items-center justify-center bg-blue-300">
+				HEADER
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Section 1 (Hero) -->
+				<section>
+					<div class="container">
+						<div class="grid grid-cols-2 gap-5 sm:grid-cols-1">
+							<div>
+								<div>
+									<img
+										class="w-full"
+										src="./img/home/hero-1.png"
+										alt="hero image 1"
+									/>
+								</div>
+								<div
+									class="flex flex-col items-center gap-6 bg-blue-300 p-8 text-center"
+								>
+									<div class="flex flex-wrap items-center justify-center gap-2">
+										<p
+											class="rounded-full border border-black px-3 py-1 text-xs uppercase"
+										>
+											Månedens læseoplevelse
+										</p>
+										<p
+											class="rounded-full border border-black px-3 py-1 text-xs uppercase"
+										>
+											Ildefonso Falcones
+										</p>
+									</div>
+									<h3>Månedens læseoplevelse i juli</h3>
+									<p class="text-xs">
+										En fascinerende og storslået historie om to kvinders indædte
+										kamp for frihed i hver sin tidsalder: den ene i kolonitidens
+										Cuba og den anden i det 21. århundredes Spanien.
+									</p>
+
+									<a href="#" class="btn">Læs mere</a>
+								</div>
+							</div>
+
+							<div>
+								<div>
+									<img
+										class="w-full"
+										src="./img/home/hero-2.png"
+										alt="hero image 2"
+									/>
+								</div>
+								<div
+									class="flex flex-col items-center gap-6 bg-blue-300 p-8 text-center"
+								>
+									<div class="flex flex-wrap items-center justify-center gap-2">
+										<p
+											class="rounded-full border border-black px-3 py-1 text-xs uppercase"
+										>
+											Nomineret til martha prisen
+										</p>
+										<p
+											class="rounded-full border border-black px-3 py-1 text-xs uppercase"
+										>
+											Jesper Wung-Sung
+										</p>
+									</div>
+									<h3>Nomineret til MARTHA prisen i juli</h3>
+									<p class="text-xs">
+										Jesper Wung-Sung er nomineret til MARTHA prisen 2024. Han er
+										særligt kendt for sine velskrevne romaner og er lige nu
+										aktuel med romanen 'Hans Christian'. Foto: Les Caner
+									</p>
+
+									<a href="#" class="btn">Læs mere</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 2 -->
+				<section>
+					<div class="container">
+						<div
+							class="flex flex-col items-center justify-center gap-3 text-center"
+						>
+							<h2>Begynderskoletasker</h2>
+							<p class="text-gray-600">
+								Skoletasker på 20-22 l. Perfekt som den første skoletaske.
+							</p>
+						</div>
+
+						<div class="mt-8">
+							<!-- Slider main container -->
+							<div class="swiper swiper-home-1">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-1.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Magic League 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-2.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Unicorn Princess Purple
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-3.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Jungle Game 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-4.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Fairytale 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-5.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Cherry 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-1.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Magic League 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-2.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Unicorn Princess Purple
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-3.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Jungle Game 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-4.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Fairytale 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-5.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Cherry 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+								</div>
+
+								<!-- If we need navigation buttons -->
+								<div class="swiper-button-prev -translate-y-12"></div>
+								<div class="swiper-button-next -translate-y-12"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO:[slides heigt] Section 3 -->
+				<section>
+					<div class="container">
+						<div>
+							<!-- Slider main container -->
+							<div class="swiper swiper-home-2">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper pb-10 pt-20">
+									<!-- Slides -->
+									<div class="swiper-slide flex !h-auto flex-col bg-blue-300">
+										<div>
+											<img
+												src="./img/home/slide-img-1.png"
+												alt="slide image"
+												class="w-full"
+											/>
+										</div>
+
+										<div
+											class="mt-5 flex flex-col items-center gap-6 px-6 py-8 text-center"
+										>
+											<h3>Studiestart</h3>
+											<p class="min-h-[60px] text-sm">
+												Er du klar til studiestart? Find alt det nødvendige
+												skoletilbehør, som vil hjælpe dig til en nem og
+												velforberedt start på studiet.
+											</p>
+											<a href="#" class="btn mt-auto">
+												Bliv klar til studiestart
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide flex !h-auto flex-col bg-blue-300">
+										<div>
+											<img
+												src="./img/home/slide-img-2.png"
+												alt="slide image"
+												class="w-full"
+											/>
+										</div>
+
+										<div
+											class="mt-5 flex flex-col items-center gap-6 px-6 py-8 text-center"
+										>
+											<h3>Kontorartikler</h3>
+											<p class="min-h-[60px] text-sm">Fyld hjemmekontoret op</p>
+											<a href="#" class="btn mt-auto">Shop kontorartikler</a>
+										</div>
+									</div>
+									<div class="swiper-slide flex !h-auto flex-col bg-blue-300">
+										<div>
+											<img
+												src="./img/home/slide-img-3.png"
+												alt="slide image"
+												class="w-full"
+											/>
+										</div>
+
+										<div
+											class="mt-5 flex flex-col items-center gap-6 px-6 py-8 text-center"
+										>
+											<h3>Fyld penalhuset</h3>
+											<p class="min-h-[60px] text-sm">Skrivebaren er åben</p>
+											<a href="#" class="btn mt-auto">Shop skrivebaren</a>
+										</div>
+									</div>
+									<div class="swiper-slide flex !h-auto flex-col bg-blue-300">
+										<div>
+											<img
+												src="./img/home/slide-img-4.png"
+												alt="slide image"
+												class="w-full"
+											/>
+										</div>
+
+										<div
+											class="mt-5 flex flex-col items-center gap-6 px-6 py-8 text-center"
+										>
+											<h3>Fyld penalhuset</h3>
+											<p class="min-h-[60px] text-sm">
+												Hold styr på hele skoleårets aftaler
+											</p>
+											<a href="#" class="btn mt-auto">Shop skrivebaren</a>
+										</div>
+									</div>
+									<div class="swiper-slide flex !h-auto flex-col bg-blue-300">
+										<div>
+											<img
+												src="./img/home/slide-img-1.png"
+												alt="slide image"
+												class="w-full"
+											/>
+										</div>
+
+										<div
+											class="mt-5 flex flex-col items-center gap-6 px-6 py-8 text-center"
+										>
+											<h3>Studiestart</h3>
+											<p class="min-h-[60px] text-sm">
+												Er du klar til studiestart? Find alt det nødvendige
+												skoletilbehør, som vil hjælpe dig til en nem og
+												velforberedt start på studiet.
+											</p>
+											<a href="#" class="btn mt-auto">
+												Bliv klar til studiestart
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide flex !h-auto flex-col bg-blue-300">
+										<div>
+											<img
+												src="./img/home/slide-img-2.png"
+												alt="slide image"
+												class="w-full"
+											/>
+										</div>
+
+										<div
+											class="mt-5 flex flex-col items-center gap-6 px-6 py-8 text-center"
+										>
+											<h3>Kontorartikler</h3>
+											<p class="min-h-[60px] text-sm">Fyld hjemmekontoret op</p>
+											<a href="#" class="btn mt-auto">Shop kontorartikler</a>
+										</div>
+									</div>
+									<div class="swiper-slide flex h-auto flex-col bg-blue-300">
+										<div>
+											<img
+												src="./img/home/slide-img-3.png"
+												alt="slide image"
+												class="w-full"
+											/>
+										</div>
+
+										<div
+											class="mt-5 flex flex-col items-center gap-6 px-6 py-8 text-center"
+										>
+											<h3>Fyld penalhuset</h3>
+											<p class="min-h-[60px] text-sm">Skrivebaren er åben</p>
+											<a href="#" class="btn mt-auto">Shop skrivebaren</a>
+										</div>
+									</div>
+									<div class="swiper-slide flex h-auto flex-col bg-blue-300">
+										<div>
+											<img
+												src="./img/home/slide-img-4.png"
+												alt="slide image"
+												class="w-full"
+											/>
+										</div>
+
+										<div
+											class="mt-5 flex flex-col items-center gap-6 px-6 py-8 text-center"
+										>
+											<h3>Fyld penalhuset</h3>
+											<p class="min-h-[60px] text-sm">
+												Hold styr på hele skoleårets aftaler
+											</p>
+											<a href="#" class="btn mt-auto">Shop skrivebaren</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- If we need scrollbar -->
+								<div class="swiper-scrollbar !h-[2px]"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev !left-[unset] !right-16 !top-6"
+								></div>
+								<div class="swiper-button-next !top-6"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 4 -->
+				<section>
+					<div class="container">
+						<div class="flex bg-red-300 md:flex-col">
+							<div>
+								<img
+									class="w-full"
+									src="./img/home/journal-1.png"
+									alt="journal image"
+								/>
+							</div>
+							<div class="flex max-w-[530px] flex-col p-12 sm:p-6">
+								<div class="mt-auto flex flex-col gap-6">
+									<div class="flex flex-wrap items-center gap-3">
+										<p
+											class="rounded-full border border-black px-3 py-1 text-xs uppercase"
+										>
+											Kompetent rådgivning
+										</p>
+										<p
+											class="rounded-full border border-black px-3 py-1 text-xs uppercase"
+										>
+											Stort sortiment
+										</p>
+										<p
+											class="rounded-full border border-black px-3 py-1 text-xs uppercase"
+										>
+											Skolestart
+										</p>
+									</div>
+									<h3>Klar, parat, skolestart!</h3>
+									<p class="text-xs">
+										Frisk fra ferien og klar til start! Kataloget gælder til og
+										med søndag den 1. september.
+									</p>
+
+									<a href="#" class="btn bg-black hover:bg-black/80">
+										Find kataloget her
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 5 -->
+				<section>
+					<div class="container">
+						<div class="flex bg-neutral-300 md:flex-col">
+							<div>
+								<img
+									class="w-full"
+									src="./img/home/journal-2.png"
+									alt="journal image"
+								/>
+							</div>
+							<div class="flex max-w-[530px] flex-col p-12 sm:p-6">
+								<div class="mt-auto flex flex-col gap-6">
+									<div class="flex flex-wrap items-center gap-3">
+										<p
+											class="rounded-full border border-black px-3 py-1 text-xs uppercase"
+										>
+											Go Dream
+										</p>
+									</div>
+									<h3>Gratis Pixum fotobog</h3>
+									<p class="text-xs">
+										Ved køb af en GO DREAM oplevelse for min 299,- Kampagnen
+										gælder i perioden 20/06 - 31/08-2024
+									</p>
+
+									<a href="#" class="btn">Læs mere her</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer class="flex h-40 items-center justify-center bg-slate-300">
+				FOOTER
+			</footer>
+		</div>
+
+		<!-- Libs -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
