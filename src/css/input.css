@@ -7,7 +7,7 @@
 		@apply max-w-[1300px];
 	}
 	body {
-		@apply font-inter relative;
+		@apply relative font-inter;
 	}
 	section {
 		@apply py-8 lg:py-10;
@@ -18,7 +18,7 @@
 	}
 
 	h2 {
-		@apply text-[32px] font-bold leading-9 tracking-[0.5px];
+		@apply text-[32px] font-bold leading-9 tracking-[0.5px] xs:text-3xl;
 	}
 }
 
@@ -26,6 +26,16 @@
 	/* Button */
 	.btn {
 		@apply inline-block max-w-fit rounded-full bg-red-600 px-6 py-4 text-sm font-bold text-white hover:bg-red-700;
+	}
+
+	/* Link */
+	.link {
+		@apply text-red-600 underline-offset-2 hover:underline;
+	}
+
+	/* breadcrumbs-item */
+	.breadcrumbs-item {
+		@apply relative px-3 text-sm text-gray-600 underline-offset-2 after:absolute after:right-0 after:top-0 after:content-['/'] first:pl-0 last:cursor-default last:after:hidden hover:underline;
 	}
 }
 
@@ -46,7 +56,9 @@
 	background: #e73132 !important;
 }
 
-.swiper-home-1 {
+.swiper-home-1,
+.swiper-product-1,
+.swiper-product-2 {
 	.swiper-button-disabled {
 		display: none !important;
 	}
