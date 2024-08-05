@@ -13,6 +13,10 @@
 		@apply py-8 lg:py-10;
 	}
 
+	h1 {
+		@apply text-[46px] font-black tracking-[0.71px];
+	}
+
 	h3 {
 		@apply text-2xl font-bold leading-7;
 	}

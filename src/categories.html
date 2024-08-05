@@ -27,49 +27,185 @@
 
 			<!-- Main Content -->
 			<main class="flex-auto">
-				<!-- Section 1 -->
+				<!-- SEction 1 -->
+				<section class="pb-0">
+					<div class="container">
+						<div class="space-y-7 border-b border-b-gray-400 pb-8">
+							<h1>Brætspil</h1>
+
+							<div
+								class="grid grid-cols-4 gap-2 divide-x divide-gray-400 sm:grid-cols-1 sm:divide-x-0"
+							>
+								<div class="pl-0">
+									<ul class="space-y-2">
+										<li>
+											<a href="#" class="underline-offset-4 hover:underline">
+												Brætspil for 2
+											</a>
+										</li>
+										<li>
+											<a href="#" class="underline-offset-4 hover:underline">
+												Brætspil for voksne
+											</a>
+										</li>
+										<li>
+											<a href="#" class="underline-offset-4 hover:underline">
+												Børnespil
+											</a>
+										</li>
+										<li>
+											<a href="#" class="underline-offset-4 hover:underline">
+												Escape spil
+											</a>
+										</li>
+										<li>
+											<a href="#" class="underline-offset-4 hover:underline">
+												Havespil
+											</a>
+										</li>
+									</ul>
+								</div>
+								<button
+									id="more-categories-btn"
+									class="hidden text-gray-500 sm:mt-2 sm:block sm:max-w-fit"
+								>
+									Vis alle (17)
+								</button>
+								<div
+									id="more-categories-content"
+									class="col-span-3 grid grid-cols-3 gap-2 divide-x divide-gray-400 sm:hidden sm:grid-cols-1 sm:divide-x-0"
+								>
+									<div class="pl-5 sm:pl-0">
+										<ul class="space-y-2">
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Familiespil
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Kortspil
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Læringsspil
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Online spil
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="pl-5 sm:pl-0">
+										<ul class="space-y-2">
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Familiespil
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Kortspil
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Læringsspil
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Online spil
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="pl-5 sm:pl-0">
+										<ul class="space-y-2">
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Spil tilbehør
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Strategispil
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Terningespil
+												</a>
+											</li>
+											<li>
+												<a href="#" class="underline-offset-4 hover:underline">
+													Årets spil 2023
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 2 -->
 				<section>
 					<div class="container">
 						<!-- Filters -->
 						<div
-							class="my-6 flex items-center justify-between gap-5 sm:flex-col sm:items-start"
+							class="my-6 flex items-center justify-between gap-5 sm:grid sm:grid-cols-2"
 						>
-							<div class="flex flex-wrap gap-5 sm:gap-2">
+							<div class="flex gap-5">
 								<button
-									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100 sm:w-full sm:justify-center"
 								>
 									<img src="./img/icons/filter.svg" alt="icon" />
 									Filtrer
 								</button>
-								<button
-									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
-								>
-									Kategori
-								</button>
-								<button
-									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
-								>
-									Serie
-								</button>
-								<button
-									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
-								>
-									Pris
-								</button>
+
+								<div class="flex gap-5 sm:hidden">
+									<button
+										class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+									>
+										Kategori
+									</button>
+									<button
+										class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+									>
+										Serie
+									</button>
+									<button
+										class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+									>
+										Pris
+									</button>
+								</div>
 							</div>
 							<div class="flex items-center gap-5 sm:w-full sm:justify-between">
-								<p class="text-sm text-gray-500">
+								<p class="text-sm text-gray-500 sm:hidden">
 									<span>645</span>
 									produkter
 								</p>
 								<button
-									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100 sm:w-full sm:justify-center"
 								>
 									<img src="./img/icons/sort.svg" alt="icon" />
 									Anbefalet
 								</button>
 							</div>
+
+							<p
+								class="hidden gap-1 text-sm text-gray-500 sm:col-span-2 sm:flex sm:justify-center"
+							>
+								<span>645</span>
+								produkter
+							</p>
 						</div>
+
 						<!-- Products -->
 						<div
 							class="grid grid-cols-5 gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1"
@@ -921,7 +1057,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- Section 2 -->
+				<!-- Section 3-->
 				<section>
 					<div class="container">
 						<div

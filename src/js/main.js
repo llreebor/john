@@ -98,6 +98,28 @@ if (document.getElementById('categories-page')) {
 			},
 		},
 	})
+
+	// SHow more categories
+	function showMoreCategories() {
+		const btn = document.getElementById('more-categories-btn')
+		const content = document.getElementById('more-categories-content')
+
+		btn.addEventListener('click', () => {
+			btn.style.display = 'none'
+			content.style.display = 'grid'
+			content.classList.add('grid-cols-1')
+			content.classList.remove('grid-cols-3')
+		})
+
+		// Вот тут мы ставим брейкпоинт навбара
+		window.addEventListener('resize', () => {
+			if (window.innerWidth > 767.99) {
+				content.classList.remove('grid-cols-1')
+				content.classList.add('grid-cols-3')
+			}
+		})
+	}
+	showMoreCategories()
 }
 
 // Product Page Scripts
