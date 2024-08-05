@@ -67,6 +67,39 @@ if (document.getElementById('home-page')) {
 	})
 }
 
+// Categories Page Scripts
+if (document.getElementById('categories-page')) {
+	// Categories Slider 1
+	new Swiper('.swiper-categories-1', {
+		// Optional parameters
+		spaceBetween: 20,
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+		// Responsive breakpoints
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			480: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+			992: {
+				slidesPerView: 4,
+			},
+			1200: {
+				slidesPerView: 5,
+			},
+		},
+	})
+}
+
 // Product Page Scripts
 if (document.getElementById('product-page')) {
 	console.log('product-page')
@@ -140,6 +173,34 @@ if (document.getElementById('product-page')) {
 			},
 		},
 	})
+
+	// Counter
+	function counter() {
+		document.addEventListener('DOMContentLoaded', (event) => {
+			const decreaseButton = document.getElementById('decrease-count')
+			const increaseButton = document.getElementById('increase-count')
+			const productCount = document.getElementById('product-count')
+
+			let count = 1
+
+			increaseButton.addEventListener('click', () => {
+				count++
+				productCount.textContent = count
+				decreaseButton.classList.remove('opacity-50')
+			})
+
+			decreaseButton.addEventListener('click', () => {
+				if (count > 1) {
+					count--
+					productCount.textContent = count
+				}
+				if (count === 1) {
+					decreaseButton.classList.add('opacity-50')
+				}
+			})
+		})
+	}
+	counter()
 }
 
 // Animations

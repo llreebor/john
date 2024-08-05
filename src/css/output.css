@@ -1012,6 +1012,11 @@ h2 {
   margin-bottom: 1.75rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1148,10 +1153,6 @@ h2 {
   height: 50px;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-full {
   height: 100%;
 }
@@ -1162,10 +1163,6 @@ h2 {
 
 .min-h-7 {
   min-height: 1.75rem;
-}
-
-.min-h-\[60px\] {
-  min-height: 60px;
 }
 
 .min-h-full {
@@ -1766,6 +1763,16 @@ h2 {
   padding-bottom: 2px;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1934,6 +1941,10 @@ h2 {
 
 .underline-offset-4 {
   text-underline-offset: 4px;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow {
@@ -2210,6 +2221,11 @@ h2 {
 .hover\:bg-slate-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 219 219 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover {
@@ -2540,6 +2556,12 @@ h2 {
   --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
 }
 
+@media (max-width: 1199.99px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 991.99px) {
   .md\:flex {
     display: flex;
@@ -2559,6 +2581,10 @@ h2 {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-col {
@@ -2596,6 +2622,10 @@ h2 {
     display: none;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:max-w-full {
     max-width: 100%;
   }
@@ -2604,8 +2634,16 @@ h2 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-col {
     flex-direction: column;
+  }
+
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .sm\:items-start {
@@ -2620,8 +2658,20 @@ h2 {
     justify-content: center;
   }
 
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
   .sm\:gap-8 {
     gap: 2rem;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .sm\:gap-2 {
+    gap: 0.5rem;
   }
 
   .sm\:p-6 {

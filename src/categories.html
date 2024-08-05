@@ -1,0 +1,1594 @@
+<!doctype html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home Page</title>
+		<link rel="stylesheet" href="./css/output.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body class="h-full" id="categories-page">
+		<div class="wrapper flex min-h-full flex-col">
+			<!-- Header -->
+			<header class="flex h-40 items-center justify-center bg-blue-300">
+				HEADER
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Section 1 -->
+				<section>
+					<div class="container">
+						<!-- Filters -->
+						<div
+							class="my-6 flex items-center justify-between gap-5 sm:flex-col sm:items-start"
+						>
+							<div class="flex flex-wrap gap-5 sm:gap-2">
+								<button
+									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+								>
+									<img src="./img/icons/filter.svg" alt="icon" />
+									Filtrer
+								</button>
+								<button
+									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+								>
+									Kategori
+								</button>
+								<button
+									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+								>
+									Serie
+								</button>
+								<button
+									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+								>
+									Pris
+								</button>
+							</div>
+							<div class="flex items-center gap-5 sm:w-full sm:justify-between">
+								<p class="text-sm text-gray-500">
+									<span>645</span>
+									produkter
+								</p>
+								<button
+									class="font-menium flex items-center gap-2 rounded-full border border-gray-400 px-5 py-[10px] text-sm hover:bg-gray-100"
+								>
+									<img src="./img/icons/sort.svg" alt="icon" />
+									Anbefalet
+								</button>
+							</div>
+						</div>
+						<!-- Products -->
+						<div
+							class="grid grid-cols-5 gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1"
+						>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										class="absolute right-5 top-1"
+										src="./img/home/slide-banner-duo.png"
+										alt="banner"
+									/>
+									<img
+										src="./img/categories/categories-1.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Uno skip-bo</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-2.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">UNO No Mercy</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">169,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-3.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Kluster</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">189,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-4.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">
+										Go' Samtale Parudgave samtalekort
+									</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">159,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-5.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Rummikub travel</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+								</div>
+							</a>
+
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										class="absolute right-5 top-1"
+										src="./img/home/slide-banner-duo.png"
+										alt="banner"
+									/>
+									<img
+										src="./img/categories/categories-1.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Uno skip-bo</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-2.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">UNO No Mercy</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">169,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-3.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Kluster</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">189,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-4.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">
+										Go' Samtale Parudgave samtalekort
+									</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">159,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-5.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Rummikub travel</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+								</div>
+							</a>
+
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										class="absolute right-5 top-1"
+										src="./img/home/slide-banner-duo.png"
+										alt="banner"
+									/>
+									<img
+										src="./img/categories/categories-1.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Uno skip-bo</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-2.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">UNO No Mercy</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">169,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-3.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Kluster</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">189,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-4.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">
+										Go' Samtale Parudgave samtalekort
+									</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">159,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-5.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Rummikub travel</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+								</div>
+							</a>
+
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										class="absolute right-5 top-1"
+										src="./img/home/slide-banner-duo.png"
+										alt="banner"
+									/>
+									<img
+										src="./img/categories/categories-1.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Uno skip-bo</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-2.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">UNO No Mercy</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">169,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-3.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Kluster</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">189,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-4.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">
+										Go' Samtale Parudgave samtalekort
+									</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">159,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-5.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Rummikub travel</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+								</div>
+							</a>
+
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										class="absolute right-5 top-1"
+										src="./img/home/slide-banner-duo.png"
+										alt="banner"
+									/>
+									<img
+										src="./img/categories/categories-1.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Uno skip-bo</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-2.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">UNO No Mercy</p>
+									<p class="text-sm italic text-gray-500">Spillekort</p>
+									<p class="text-sm font-bold">169,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-3.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Kluster</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">189,95 DKK</p>
+
+									<!-- Stars -->
+									<div class="flex items-center gap-1">
+										<div class="grid w-[65px] grid-cols-5">
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+											<img
+												class="w-[14px]"
+												src="./img/icons/star-filled.svg"
+												alt="star"
+											/>
+										</div>
+
+										<p class="text-xs font-bold uppercase text-gray-400">(1)</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-4.png"
+										alt="product image"
+										class="w-full"
+									/>
+									<p
+										class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+									>
+										KUN KLIK & HENT
+									</p>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">
+										Go' Samtale Parudgave samtalekort
+									</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">159,95 DKK</p>
+								</div>
+							</a>
+							<a href="#" class="group flex flex-col">
+								<div
+									class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+								>
+									<img
+										src="./img/categories/categories-5.png"
+										alt="product image"
+										class="w-full"
+									/>
+								</div>
+
+								<div class="mt-5 space-y-2">
+									<p class="text-xs font-bold">Rummikub travel</p>
+									<p class="text-sm italic text-gray-500">Brætspil</p>
+									<p class="text-sm font-bold">129,95 DKK</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- Section 2 -->
+				<section>
+					<div class="container">
+						<div
+							class="flex flex-col items-center justify-center gap-3 text-center"
+						>
+							<h2>Begynderskoletasker</h2>
+							<p class="text-gray-600">
+								Skoletasker på 20-22 l. Perfekt som den første skoletaske.
+							</p>
+						</div>
+
+						<div class="mt-8">
+							<!-- Slider main container -->
+							<div class="swiper swiper-categories-1">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-1.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Magic League 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-2.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Unicorn Princess Purple
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-3.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Jungle Game 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-4.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Fairytale 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-5.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Cherry 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-1.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Magic League 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-2.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Unicorn Princess Purple
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-3.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Jungle Game 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-4.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Fairytale 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div
+											class="relative overflow-hidden rounded bg-black/5 px-10 py-14 transition-colors group-hover:bg-black/10"
+										>
+											<!-- Slide banner -->
+											<img
+												class="absolute right-5 top-1"
+												src="./img/home/slide-banner-duo.png"
+												alt="banner"
+											/>
+											<img
+												src="./img/home/product-5.png"
+												alt="product image"
+												class="w-full"
+											/>
+
+											<p
+												class="absolute bottom-0 left-0 rounded-tr bg-black p-2 text-sm uppercase text-white"
+											>
+												KUN KLIK & HENT
+											</p>
+										</div>
+
+										<div class="mt-5 space-y-2">
+											<p class="text-xs font-bold">
+												Beckmann Classic Cherry 22 Liter
+											</p>
+											<p class="text-sm italic text-gray-500">Skoletasker</p>
+											<p class="text-sm font-bold">899,95 DKK</p>
+										</div>
+									</a>
+								</div>
+
+								<!-- If we need navigation buttons -->
+								<div class="swiper-button-prev -translate-y-12"></div>
+								<div class="swiper-button-next -translate-y-12"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer class="mt-20">
+				<div class="container">
+					<div
+						class="flex justify-between gap-5 border-t-4 border-black py-16 md:grid md:grid-cols-2 md:gap-10 xs:grid-cols-1"
+					>
+						<div class="space-y-3">
+							<p class="text-[10px] font-bold uppercase">Kundeservice</p>
+
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Spørgsmål og svar
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Hjælp til E-bøger
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Hjælp til lydbøger
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Prismatch
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Skabeloner og etiketter
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Returnering og bytteservice
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Salg til erhverv
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="space-y-3">
+							<p class="text-[10px] font-bold uppercase">Tryg Handel</p>
+
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Cookiepolitik
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										E-mærket
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Handelsbetingelser
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Klubvilkår
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Persondatapolitik
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Indeks Retail Butik A/S
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										CVR-nr. 59948628
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="space-y-3">
+							<p class="text-[10px] font-bold uppercase">Om Bog & Idé</p>
+
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Om os
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Affiliate
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Hjertesag
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Presse
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Job hos Bog & idé
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Katalog
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="space-y -3">
+							<p class="text-[10px] font-bold uppercase">App</p>
+
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Hent app
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Login
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									></a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Opret streaming bruger
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Spørgsmål og svar
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Abonnementsbetingelser
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="space-y-3">
+							<p class="text-[10px] font-bold uppercase">Følg os</p>
+
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Facebook
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Instagram
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Live
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Pinterest
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm font-medium underline-offset-4 hover:underline"
+									>
+										Kundeklub
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div
+						class="flex items-center justify-between pb-10 pt-3 sm:flex-col sm:items-start sm:gap-8"
+					>
+						<div class="flex items-center gap-4 xs:flex-wrap">
+							<a href="#"><img src="./img/global/logo.png" alt="logo" /></a>
+
+							<div class="flex items-center gap-5 divide-x-2 divide-[#DBDBDB]">
+								<p class="text-sm font-medium text-gray-500">
+									© Copyright Bog & idé
+								</p>
+								<a
+									href="#"
+									class="pl-5 text-sm font-medium text-gray-500 hover:text-black"
+								>
+									Cookiepolitik
+								</a>
+							</div>
+						</div>
+
+						<div class="flex items-center gap-3 xs:gap-2">
+							<img src="./img/global/footer-icon-1.png" alt="footer icon" />
+							<img src="./img/global/footer-icon-2.png" alt="footer icon" />
+							<img src="./img/global/footer-icon-3.png" alt="footer icon" />
+							<img src="./img/global/footer-icon-4.png" alt="footer icon" />
+							<img src="./img/global/footer-icon-5.png" alt="footer icon" />
+							<img src="./img/global/footer-icon-6.png" alt="footer icon" />
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Libs -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
