@@ -21,8 +21,850 @@
 	<body class="h-full" id="home-page">
 		<div class="wrapper flex min-h-full flex-col">
 			<!-- Header -->
-			<header class="flex h-40 items-center justify-center bg-blue-300">
-				HEADER
+			<header class="bg-white">
+				<div class="container">
+					<div
+						class="flex items-center gap-10 pb-8 pt-10 sm:flex-wrap sm:gap-4 sm:py-5"
+					>
+						<div class="flex shrink-0 items-center gap-3">
+							<!-- Burger Button -->
+							<button
+								id="burger"
+								class="group relative z-20 hidden h-5 w-[30px] md:block"
+							>
+								<span
+									class="absolute left-0 top-0 flex h-[2px] w-[30px] bg-black transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45 group-[.active]:bg-white"
+								></span>
+								<span
+									class="absolute left-0 top-1/2 flex h-[2px] w-[30px] -translate-y-1/2 translate-x-0 bg-black transition-transform group-[.active]:opacity-0"
+								></span>
+								<span
+									class="absolute bottom-0 left-0 flex h-[2px] w-[30px] bg-black transition-transform group-[.active]:-translate-y-[10px] group-[.active]:-rotate-45 group-[.active]:bg-white"
+								></span>
+							</button>
+							<a href="#">
+								<img
+									class="max-w-[116px]"
+									src="./img/global/logo.png"
+									alt="logo"
+								/>
+							</a>
+						</div>
+
+						<form action="#" class="w-full sm:order-3 sm:grow">
+							<label for="search" class="relative">
+								<img
+									class="absolute left-4 top-1/2 -translate-y-1/2"
+									src="./img/icons/serach.svg"
+									alt="search icon"
+								/>
+								<input
+									class="w-full rounded-full border border-gray-200 bg-gray-200 pl-10"
+									type="text"
+									id="search"
+									name="search"
+								/>
+							</label>
+						</form>
+
+						<div class="flex shrink-0 gap-5 sm:ml-auto">
+							<button class="flex items-center gap-3 xs:flex-col xs:gap-1">
+								<img src="./img/icons/login.svg" alt="login icon" />
+								<p>Log ind</p>
+							</button>
+
+							<button class="flex items-center gap-3 xs:flex-col xs:gap-1">
+								<img src="./img/icons/busket.svg" alt="busket icon" />
+								<p>Kurv</p>
+							</button>
+						</div>
+					</div>
+
+					<!-- Menu -->
+					<div class="relative flex justify-between gap-10 md:hidden">
+						<nav>
+							<ul class="flex gap-7">
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 group-hover:text-red-600 group-hover:underline"
+									>
+										Bøger
+									</a>
+									<!-- Submenu for (Bøger) -->
+									<div
+										class="absolute left-0 top-full hidden w-full grid-cols-4 bg-white py-10 group-hover:grid"
+									>
+										<!-- 1 -->
+										<div class="col-span-3 space-y-3">
+											<p class="font-bold">Kategorier</p>
+											<ul class="grid grid-cols-3 space-y-1">
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Bestseller bøger 2024
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Biografier
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Børnebøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Coffee table books
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														E-bøger
+													</a>
+												</li>
+
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Engelske bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Erotiske bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Faglitteratur
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Fantasy
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Historie og samfund
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Historiske romaner
+													</a>
+												</li>
+
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Kogebøger
+													</a>
+												</li>
+
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Kongehuset
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Kreative bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Krimi og spænding
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Krop og sjæl
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Kunst og kultur
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Lydbøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Malebøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Opgave- og malebøger 3 for 120,-
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Psykologi bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Rejsebøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Romantasy
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Skønlitteratur
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Studiebøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Streaming
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Tegneserier
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Top 10 bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Ungdomsbøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Virkelige hændelser
+													</a>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 2 -->
+										<div class="space-y-3 border-l border-l-gray-200 pl-10">
+											<p class="font-bold">Populære områder</p>
+											<ul class="space-y-1">
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Bogudgivelser
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														#Booktok
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Engelske bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Filmatiserede bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Forudbestillinger
+													</a>
+												</li>
+
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Bøger med stærk pris
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Gode læseoplevelser 2 for 130,-
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Månedens læseoplevelse
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														MARTHA prisen
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Nye bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Populære bøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Serie rækkefølge
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Skole
+									</a>
+									<!-- Submenu for (Skole) -->
+									<div
+										class="absolute left-0 top-full hidden w-full grid-cols-4 bg-white py-10 group-hover:grid"
+									>
+										<!-- 1 -->
+										<div class="col-span-3 space-y-3">
+											<p class="font-bold">Kategorier</p>
+											<ul class="grid grid-cols-3 space-y-1">
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Skolestart
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Studiestart
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Aktivitetsbøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Computer sleeve
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Blyanter
+													</a>
+												</li>
+
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Bogbind
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Drikkedunke og vandflasker
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Dymo
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Farveblyanter
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Graphit Stylus
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Gymnastikposer
+													</a>
+												</li>
+
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Gymnastiktasker
+													</a>
+												</li>
+
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Kalender
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Kuglepenne
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Lommeregnere
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Læringsspil
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Madkasser
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														MatematikFessor
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Notesbøger
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Penalhuse
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Rygsæk
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Skoleredskaber
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Skoletasker
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Skriveredskaber
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														TOPModel
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Tusser
+													</a>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 2 -->
+										<div class="space-y-3 border-l border-l-gray-200 pl-10">
+											<p class="font-bold">Populære områder</p>
+											<ul class="space-y-1">
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Beckmann
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														ergobag
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Faber-Castell
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Graphit stylus
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														LEGO®
+													</a>
+												</li>
+
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Relief
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Satch
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Sistema
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Staedtler
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Texas Instruments
+													</a>
+												</li>
+												<li>
+													<a
+														href="#"
+														class="text-sm font-medium underline-offset-4 hover:underline"
+													>
+														Tinka
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Kontor
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Spil
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Legetøj
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Krea
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Go Dream
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<nav>
+							<ul class="flex gap-7">
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Klubben
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Outlet
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Tilbud
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Gavekort
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="font-medium underline-offset-4 hover:text-red-600 hover:underline"
+									>
+										Streaming
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</header>
 
 			<!-- Main Content -->
@@ -1008,7 +1850,13 @@
 						class="flex items-center justify-between pb-10 pt-3 sm:flex-col sm:items-start sm:gap-8"
 					>
 						<div class="flex items-center gap-4 xs:flex-wrap">
-							<a href="#"><img src="./img/global/logo.png" alt="logo" /></a>
+							<a href="#">
+								<img
+									class="max-w-[116px]"
+									src="./img/global/logo.png"
+									alt="logo"
+								/>
+							</a>
 
 							<div class="flex items-center gap-5 divide-x-2 divide-[#DBDBDB]">
 								<p class="text-sm font-medium text-gray-500">
