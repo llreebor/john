@@ -1035,11 +1035,6 @@ h2 {
   margin-bottom: 1.75rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1090,10 +1085,6 @@ h2 {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.-ml-5 {
-  margin-left: -1.25rem;
 }
 
 .block {
@@ -1252,10 +1243,6 @@ h2 {
   width: 100vw;
 }
 
-.w-\[280px\] {
-  width: 280px;
-}
-
 .min-w-full {
   min-width: 100%;
 }
@@ -1327,8 +1314,13 @@ h2 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-x-5 {
-  --tw-translate-x: -1.25rem;
+.translate-x-\[3000px\] {
+  --tw-translate-x: 3000px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-full {
+  --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1908,6 +1900,10 @@ h2 {
   padding-left: 2.5rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -1967,11 +1963,6 @@ h2 {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-black {
@@ -2157,34 +2148,6 @@ h2 {
   .swiper-button-disabled {
     display: none !important;
   }
-}
-
-.hidden {
-  display: none;
-}
-
-.menu {
-  position: absolute;
-  overflow: hidden;
-  width: 280px;
-  top: 65px;
-  transition:
-		transform 0.3s ease-in-out,
-		opacity 0.3s ease-in-out;
-}
-
-.menu-slide-out {
-  transform: translateX(-100%);
-  opacity: 0;
-}
-
-.menu-slide-in {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.back-btn img {
-  transform: rotate(180deg);
 }
 
 .before\:absolute::before {
@@ -2487,6 +2450,25 @@ h2 {
 .group.active .group-\[\.active\]\:rotate-45 {
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group.active .group-\[\.active\]\:rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes slide-in-x {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.group.opened .group-\[\.opened\]\:animate-slideInX {
+  animation: slide-in-x .3s ease;
 }
 
 .group.active .group-\[\.active\]\:grid-rows-\[1fr\] {

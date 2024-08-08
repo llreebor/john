@@ -1780,9 +1780,13 @@
 					</div>
 
 					<!-- Mobile Menu -->
-					<div class="fixed inset-0 z-20 bg-black/50" id="mobile-menu">
+					<div
+						id="mobile-menu"
+						class="mobile-menu-wrapper group fixed inset-0 z-20 hidden bg-black/50 transition-all"
+					>
 						<div
-							class="flex h-full max-w-[320px] flex-col overflow-auto bg-white p-5"
+							id="menu-body"
+							class="group-[.opened]:animate-slideInX flex h-full max-w-[320px] flex-col overflow-auto bg-white p-5 transition-transform"
 						>
 							<div
 								class="relative flex justify-center border-b-2 border-black pb-3"
@@ -1797,96 +1801,157 @@
 								/>
 							</div>
 
-							<ul id="main-menu" class="menu animate-fadeIn divide-y">
-								<li class="py-3">
-									<button
-										class="flex w-full items-center justify-between"
-										data-target="sub-menu-books"
-									>
+							<ul class="divide-y">
+								<!-- With Submenu -->
+								<li class="submenu-trigger group">
+									<button class="flex w-full items-center justify-between py-3">
 										<span>Bøger</span>
-										<img src="./img/icons/menu-arrow.svg" alt="arrow" />
+										<img
+											class="transition-transform group-[.active]:rotate-90"
+											src="./img/icons/menu-arrow.svg"
+											alt="arrow"
+										/>
 									</button>
+
+									<!-- SUbmenu for (Bøger)  -->
+									<ul class="mobile-submenu hidden pl-2">
+										<li><a href="#" class="block py-2">Inner 1</a></li>
+										<li><a href="#" class="block py-2">Inner 2</a></li>
+										<li><a href="#" class="block py-2">Inner 3</a></li>
+										<li><a href="#" class="block py-2">Inner 4</a></li>
+									</ul>
 								</li>
-								<li class="py-3">
-									<button
-										class="flex w-full items-center justify-between"
-										data-target="sub-menu-klubben"
-									>
-										<span>Klubben</span>
-										<img src="./img/icons/menu-arrow.svg" alt="arrow" />
+								<li class="py-3"><a href="#">Klubben</a></li>
+
+								<!-- With Submenu -->
+								<li class="submenu-trigger group">
+									<button class="flex w-full items-center justify-between py-3">
+										<span>Skole</span>
+										<img
+											class="transition-transform group-[.active]:rotate-90"
+											src="./img/icons/menu-arrow.svg"
+											alt="arrow"
+										/>
 									</button>
+
+									<!-- SUbmenu for (Skole)  -->
+									<ul class="mobile-submenu hidden pl-2">
+										<li><a href="#" class="block py-2">Inner 1</a></li>
+										<li><a href="#" class="block py-2">Inner 2</a></li>
+										<li><a href="#" class="block py-2">Inner 3</a></li>
+										<li><a href="#" class="block py-2">Inner 4</a></li>
+									</ul>
 								</li>
-								<!-- Add more items similarly -->
+
+								<!-- With Submenu -->
+								<li class="submenu-trigger group">
+									<button class="flex w-full items-center justify-between py-3">
+										<span>Kontor</span>
+										<img
+											class="transition-transform group-[.active]:rotate-90"
+											src="./img/icons/menu-arrow.svg"
+											alt="arrow"
+										/>
+									</button>
+
+									<!-- SUbmenu for (Kontor)  -->
+									<ul class="mobile-submenu hidden pl-2">
+										<li><a href="#" class="block py-2">Inner 1</a></li>
+										<li><a href="#" class="block py-2">Inner 2</a></li>
+										<li><a href="#" class="block py-2">Inner 3</a></li>
+										<li><a href="#" class="block py-2">Inner 4</a></li>
+									</ul>
+								</li>
+
+								<!-- With Submenu -->
+								<li class="submenu-trigger group">
+									<button class="flex w-full items-center justify-between py-3">
+										<span>Spil</span>
+										<img
+											class="transition-transform group-[.active]:rotate-90"
+											src="./img/icons/menu-arrow.svg"
+											alt="arrow"
+										/>
+									</button>
+
+									<!-- SUbmenu for (Spil)  -->
+									<ul class="mobile-submenu hidden pl-2">
+										<li><a href="#" class="block py-2">Inner 1</a></li>
+										<li><a href="#" class="block py-2">Inner 2</a></li>
+										<li><a href="#" class="block py-2">Inner 3</a></li>
+										<li><a href="#" class="block py-2">Inner 4</a></li>
+									</ul>
+								</li>
+
+								<!-- With Submenu -->
+								<li class="submenu-trigger group">
+									<button class="flex w-full items-center justify-between py-3">
+										<span>Legetøj</span>
+										<img
+											class="transition-transform group-[.active]:rotate-90"
+											src="./img/icons/menu-arrow.svg"
+											alt="arrow"
+										/>
+									</button>
+
+									<!-- SUbmenu for (Legetøj)  -->
+									<ul class="mobile-submenu hidden pl-2">
+										<li><a href="#" class="block py-2">Inner 1</a></li>
+										<li><a href="#" class="block py-2">Inner 2</a></li>
+										<li><a href="#" class="block py-2">Inner 3</a></li>
+										<li><a href="#" class="block py-2">Inner 4</a></li>
+									</ul>
+								</li>
+
+								<!-- With Submenu -->
+								<li class="submenu-trigger group">
+									<button class="flex w-full items-center justify-between py-3">
+										<span>Krea</span>
+										<img
+											class="transition-transform group-[.active]:rotate-90"
+											src="./img/icons/menu-arrow.svg"
+											alt="arrow"
+										/>
+									</button>
+
+									<!-- SUbmenu for (Krea)  -->
+									<ul class="mobile-submenu hidden pl-2">
+										<li><a href="#" class="block py-2">Inner 1</a></li>
+										<li><a href="#" class="block py-2">Inner 2</a></li>
+										<li><a href="#" class="block py-2">Inner 3</a></li>
+										<li><a href="#" class="block py-2">Inner 4</a></li>
+									</ul>
+								</li>
+
+								<li><a class="block py-3" href="#">Go Dream</a></li>
+								<li><a class="block py-3" href="#">Outlet</a></li>
+								<li><a class="block py-3" href="#">Tilbud</a></li>
+
+								<!-- With Submenu -->
+								<li class="submenu-trigger group">
+									<button class="flex w-full items-center justify-between py-3">
+										<span>Gavekort</span>
+										<img
+											class="transition-transform group-[.active]:rotate-90"
+											src="./img/icons/menu-arrow.svg"
+											alt="arrow"
+										/>
+									</button>
+
+									<!-- SUbmenu for (Gavekort)  -->
+									<ul class="mobile-submenu hidden pl-2">
+										<li><a href="#" class="block py-2">Inner 1</a></li>
+										<li><a href="#" class="block py-2">Inner 2</a></li>
+										<li><a href="#" class="block py-2">Inner 3</a></li>
+										<li><a href="#" class="block py-2">Inner 4</a></li>
+									</ul>
+								</li>
+
+								<li class="py-3"><a href="#">Streaming</a></li>
 							</ul>
 
-							<!-- Sub-menu for Bøger -->
-							<ul
-								id="sub-menu-books"
-								class="sub-menu menu hidden animate-fadeIn divide-y"
-							>
-								<li class="py-3">
-									<button class="back-btn flex w-full items-center">
-										<img src="./img/icons/back-arrow.svg" alt="back arrow" />
-										<p
-											class="mx-auto -translate-x-5 text-lg font-bold text-red-600"
-										>
-											Bøger
-										</p>
-									</button>
-								</li>
-								<li class="py-3">
-									<button
-										class="flex w-full items-center justify-between"
-										data-target="sub-sub-menu-genres"
-									>
-										<span>Genres</span>
-										<img src="./img/icons/menu-arrow.svg" alt="arrow" />
-									</button>
-								</li>
-								<li class="py-3"><a href="#">Bøger item 2</a></li>
-								<!-- Add more items if needed -->
-							</ul>
-
-							<!-- Third Level Sub-menu for Genres -->
-							<ul
-								id="sub-sub-menu-genres"
-								class="sub-sub-menu menu hidden animate-fadeIn divide-y"
-							>
-								<li class="py-3">
-									<button class="back-btn flex w-full items-center">
-										<img src="./img/icons/back-arrow.svg" alt="back arrow" />
-										<p
-											class="mx-auto -translate-x-5 text-lg font-bold text-red-600"
-										>
-											Bøger
-										</p>
-									</button>
-								</li>
-								<li class="py-3"><a href="#">Genre 1</a></li>
-								<li class="py-3"><a href="#">Genre 2</a></li>
-								<!-- Add more items if needed -->
-							</ul>
-
-							<!-- Sub-menu for Klubben -->
-							<ul id="sub-menu-klubben" class="sub-menu menu hidden divide-y">
-								<li class="py-3">
-									<button class="back-btn flex w-full items-center">
-										<img src="./img/icons/back-arrow.svg" alt="back arrow" />
-										<span>Back</span>
-									</button>
-								</li>
-								<li class="py-3"><a href="#">Klubben item 1</a></li>
-								<li class="py-3"><a href="#">Klubben item 2</a></li>
-								<!-- Add more items if needed -->
-							</ul>
-
-							<!-- You can add more sub-menus similarly -->
-
-							<!-- Footer -->
-							<div
-								class="absolute bottom-0 w-[280px] border-t-2 border-black py-3"
-							>
-								<a href="#" class="flex items-center gap-3">
+							<div class="border-t-2 border-black">
+								<a href="#" class="flex items-center gap-3 py-3">
 									<img src="./img/icons/map.svg" alt="map icon" />
 									<span>Find butik</span>
 								</a>

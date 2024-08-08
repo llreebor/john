@@ -1,60 +1,63 @@
 // Global Scripts
 
-document.addEventListener('DOMContentLoaded', () => {
-	const mainMenu = document.getElementById('main-menu')
-	const subMenus = document.querySelectorAll('.sub-menu, .sub-sub-menu')
+// Toggle mobile menu items Visibility
+function toogleSubmenuItems() {
+	const triggers = document.querySelectorAll('.submenu-trigger')
+	const submenus = document.querySelectorAll('.mobile-submenu')
 
-	mainMenu.addEventListener('click', (e) => {
-		const target = e.target.closest('button')
-		if (target && target.dataset.target) {
-			e.preventDefault()
-			const subMenuId = target.dataset.target
-			const subMenu = document.getElementById(subMenuId)
-			navigateToMenu(mainMenu, subMenu)
+	triggers.forEach((trigger, idx) => {
+		trigger.addEventListener('click', () => {
+			trigger.classList.toggle('active')
+			slideToggle(submenus[idx])
+		})
+	})
+}
+toogleSubmenuItems()
+
+// Toggle Mobile Menu Visibility
+function toggleSidebar() {
+	// Getting the elements for opening, closing, and the sidebar menu itself
+	const openBtn = document.getElementById('burger')
+	const menu = document.getElementById('mobile-menu')
+	const menuBody = document.getElementById('menu-body')
+	const closeBtn = document.getElementById('close-menu-btn')
+
+	// Adding click event listener to the open button
+	openBtn.addEventListener('click', () => {
+		// Adding necessary classes to show the sidebar menu
+		menu.classList.add('opened')
+		menu.classList.remove('hidden')
+		menu.classList.add('fixed')
+		menuBody.classList.remove('-translate-x-full')
+		document.querySelector('body').classList.add('overflow-hidden')
+	})
+
+	// Function to close the sidebar
+	const closeSidebar = () => {
+		// Removing classes to hide the sidebar menu
+		menu.classList.remove('opened')
+		menuBody.classList.add('-translate-x-full')
+		document.querySelector('body').classList.remove('overflow-hidden')
+		setTimeout(function () {
+			menu.classList.add('hidden')
+			menu.classList.remove('fixed')
+		}, 200) // Delay to allow animation to complete
+	}
+
+	// Adding click event listener to the close button
+	closeBtn.addEventListener('click', closeSidebar)
+
+	// Adding click event listener to the sidebar menu
+	menu.addEventListener('click', (e) => {
+		// Checking if the click target is the sidebar itself
+		if (e.target.classList.contains('mobile-menu-wrapper')) {
+			// If yes, close the sidebar
+			closeSidebar()
 		}
 	})
-
-	subMenus.forEach((subMenu) => {
-		const backButton = subMenu.querySelector('.back-btn')
-		backButton.addEventListener('click', () => {
-			const parentMenu = getParentMenu(subMenu)
-			navigateToMenu(subMenu, parentMenu)
-		})
-
-		subMenu.addEventListener('click', (e) => {
-			const target = e.target.closest('button')
-			if (target && target.dataset.target) {
-				e.preventDefault()
-				const subSubMenuId = target.dataset.target
-				const subSubMenu = document.getElementById(subSubMenuId)
-				navigateToMenu(subMenu, subSubMenu)
-			}
-		})
-	})
-
-	document.getElementById('close-menu-btn').addEventListener('click', () => {
-		document.getElementById('mobile-menu').style.display = 'none'
-	})
-
-	function navigateToMenu(currentMenu, newMenu) {
-		currentMenu.classList.remove('menu-slide-in')
-		currentMenu.classList.add('menu-slide-out')
-
-		newMenu.classList.remove('hidden')
-		newMenu.classList.add('menu-slide-in')
-
-		// Убедимся, что скрытие происходит синхронно с появлением нового меню
-		setTimeout(() => {
-			currentMenu.classList.add('hidden')
-			currentMenu.classList.remove('menu-slide-out')
-		}, 300)
-	}
-
-	function getParentMenu(subMenu) {
-		const subMenuId = subMenu.id.split('-').slice(0, -1).join('-')
-		return document.getElementById(subMenuId) || mainMenu
-	}
-})
+}
+// Calling the toggleSidebar function to initialize it
+toggleSidebar()
 
 // Home Page Scripts
 if (document.getElementById('home-page')) {

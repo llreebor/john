@@ -45,9 +45,27 @@ module.exports = {
 						opacity: 1,
 					},
 				},
+				'slide-in-x': {
+					from: {
+						transform: 'translateX(-100%)',
+					},
+					to: {
+						transform: 'translateX(0)',
+					},
+				},
+				'slide-out-x': {
+					from: {
+						transform: 'translateX(0)',
+					},
+					to: {
+						transform: 'translateX(-100%)',
+					},
+				},
 			},
 			animation: {
 				fadeIn: 'fade-in .4s ease',
+				slideInX: 'slide-in-x .3s ease',
+				slideOutX: 'slide-out-x .3s ease',
 			},
 		},
 	},

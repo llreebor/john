@@ -67,31 +67,3 @@
 		display: none !important;
 	}
 }
-
-.hidden {
-	display: none;
-}
-
-.menu {
-	position: absolute;
-	overflow: hidden;
-	width: 280px;
-	top: 65px;
-	transition:
-		transform 0.3s ease-in-out,
-		opacity 0.3s ease-in-out;
-}
-
-.menu-slide-out {
-	transform: translateX(-100%);
-	opacity: 0;
-}
-
-.menu-slide-in {
-	transform: translateX(0);
-	opacity: 1;
-}
-
-.back-btn img {
-	transform: rotate(180deg);
-}
