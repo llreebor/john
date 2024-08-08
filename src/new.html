@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/output.css" />
+		<style>
+			.hidden {
+				display: none;
+			}
+
+			.menu {
+				transition: transform 0.3s ease;
+			}
+
+			.menu-slide-out {
+				transform: translateX(-100%);
+			}
+
+			.menu-slide-in {
+				transform: translateX(0);
+			}
+
+			.back-btn img {
+				transform: rotate(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Mobile Menu -->
+		<div class="fixed inset-0 z-20 bg-black/50" id="mobile-menu">
+			<div
+				class="flex h-full max-w-[320px] flex-col overflow-auto bg-white p-5"
+			>
+				<div class="relative flex justify-center border-b-2 border-black pb-3">
+					<button id="close-menu-btn" class="absolute left-0 top-0">
+						<img src="./img/icons/close.svg" alt="close menu button" />
+					</button>
+					<img class="max-w-[116px]" src="./img/global/logo.png" alt="logo" />
+				</div>
+
+				<ul id="main-menu" class="menu divide-y">
+					<li class="py-3">
+						<button
+							class="flex w-full items-center justify-between"
+							data-target="sub-menu-books"
+						>
+							<span>Bøger</span>
+							<img src="./img/icons/menu-arrow.svg" alt="arrow" />
+						</button>
+					</li>
+					<li class="py-3">
+						<button
+							class="flex w-full items-center justify-between"
+							data-target="sub-menu-klubben"
+						>
+							<span>Klubben</span>
+							<img src="./img/icons/menu-arrow.svg" alt="arrow" />
+						</button>
+					</li>
+					<!-- Add more items similarly -->
+				</ul>
+
+				<!-- Sub-menu for Bøger -->
+				<ul id="sub-menu-books" class="sub-menu menu hidden divide-y">
+					<li class="py-3">
+						<button class="back-btn flex w-full items-center">
+							<img src="./img/icons/back-arrow.svg" alt="back arrow" />
+							<span>Back</span>
+						</button>
+					</li>
+					<li class="py-3">
+						<button
+							class="flex w-full items-center justify-between"
+							data-target="sub-sub-menu-genres"
+						>
+							<span>Genres</span>
+							<img src="./img/icons/menu-arrow.svg" alt="arrow" />
+						</button>
+					</li>
+					<li class="py-3"><a href="#">Bøger item 2</a></li>
+					<!-- Add more items if needed -->
+				</ul>
+
+				<!-- Third Level Sub-menu for Genres -->
+				<ul id="sub-sub-menu-genres" class="sub-sub-menu menu hidden divide-y">
+					<li class="py-3">
+						<button class="back-btn flex w-full items-center">
+							<img src="./img/icons/back-arrow.svg" alt="back arrow" />
+							<span>Back</span>
+						</button>
+					</li>
+					<li class="py-3"><a href="#">Genre 1</a></li>
+					<li class="py-3"><a href="#">Genre 2</a></li>
+					<!-- Add more items if needed -->
+				</ul>
+
+				<!-- Sub-menu for Klubben -->
+				<ul id="sub-menu-klubben" class="sub-menu menu hidden divide-y">
+					<li class="py-3">
+						<button class="back-btn flex w-full items-center">
+							<img src="./img/icons/back-arrow.svg" alt="back arrow" />
+							<span>Back</span>
+						</button>
+					</li>
+					<li class="py-3"><a href="#">Klubben item 1</a></li>
+					<li class="py-3"><a href="#">Klubben item 2</a></li>
+					<!-- Add more items if needed -->
+				</ul>
+
+				<!-- You can add more sub-menus similarly -->
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const mainMenu = document.getElementById('main-menu')
+				const subMenus = document.querySelectorAll('.sub-menu, .sub-sub-menu')
+
+				mainMenu.addEventListener('click', (e) => {
+					const target = e.target.closest('button')
+					if (target && target.dataset.target) {
+						e.preventDefault()
+						const subMenuId = target.dataset.target
+						const subMenu = document.getElementById(subMenuId)
+						navigateToMenu(mainMenu, subMenu)
+					}
+				})
+
+				subMenus.forEach((subMenu) => {
+					const backButton = subMenu.querySelector('.back-btn')
+					backButton.addEventListener('click', () => {
+						const parentMenu = getParentMenu(subMenu)
+						navigateToMenu(subMenu, parentMenu)
+					})
+
+					subMenu.addEventListener('click', (e) => {
+						const target = e.target.closest('button')
+						if (target && target.dataset.target) {
+							e.preventDefault()
+							const subSubMenuId = target.dataset.target
+							const subSubMenu = document.getElementById(subSubMenuId)
+							navigateToMenu(subMenu, subSubMenu)
+						}
+					})
+				})
+
+				document
+					.getElementById('close-menu-btn')
+					.addEventListener('click', () => {
+						document.getElementById('mobile-menu').style.display = 'none'
+					})
+
+				function navigateToMenu(currentMenu, newMenu) {
+					currentMenu.classList.remove('menu-slide-in')
+					currentMenu.classList.add('menu-slide-out')
+
+					newMenu.classList.remove('hidden')
+					newMenu.classList.remove('menu-slide-out')
+					newMenu.classList.add('menu-slide-in')
+
+					setTimeout(() => {
+						currentMenu.classList.add('hidden')
+					}, 300) // Время совпадает с продолжительностью CSS перехода
+				}
+
+				function getParentMenu(subMenu) {
+					// Здесь можете изменять логику в зависимости от глубины вашей структуры меню
+					const subMenuId = subMenu.id.split('-').slice(0, -1).join('-')
+					return document.getElementById(subMenuId) || mainMenu
+				}
+			})
+		</script>
+	</body>
+</html>

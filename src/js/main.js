@@ -1,5 +1,61 @@
 // Global Scripts
 
+document.addEventListener('DOMContentLoaded', () => {
+	const mainMenu = document.getElementById('main-menu')
+	const subMenus = document.querySelectorAll('.sub-menu, .sub-sub-menu')
+
+	mainMenu.addEventListener('click', (e) => {
+		const target = e.target.closest('button')
+		if (target && target.dataset.target) {
+			e.preventDefault()
+			const subMenuId = target.dataset.target
+			const subMenu = document.getElementById(subMenuId)
+			navigateToMenu(mainMenu, subMenu)
+		}
+	})
+
+	subMenus.forEach((subMenu) => {
+		const backButton = subMenu.querySelector('.back-btn')
+		backButton.addEventListener('click', () => {
+			const parentMenu = getParentMenu(subMenu)
+			navigateToMenu(subMenu, parentMenu)
+		})
+
+		subMenu.addEventListener('click', (e) => {
+			const target = e.target.closest('button')
+			if (target && target.dataset.target) {
+				e.preventDefault()
+				const subSubMenuId = target.dataset.target
+				const subSubMenu = document.getElementById(subSubMenuId)
+				navigateToMenu(subMenu, subSubMenu)
+			}
+		})
+	})
+
+	document.getElementById('close-menu-btn').addEventListener('click', () => {
+		document.getElementById('mobile-menu').style.display = 'none'
+	})
+
+	function navigateToMenu(currentMenu, newMenu) {
+		currentMenu.classList.remove('menu-slide-in')
+		currentMenu.classList.add('menu-slide-out')
+
+		newMenu.classList.remove('hidden')
+		newMenu.classList.add('menu-slide-in')
+
+		// Убедимся, что скрытие происходит синхронно с появлением нового меню
+		setTimeout(() => {
+			currentMenu.classList.add('hidden')
+			currentMenu.classList.remove('menu-slide-out')
+		}, 300)
+	}
+
+	function getParentMenu(subMenu) {
+		const subMenuId = subMenu.id.split('-').slice(0, -1).join('-')
+		return document.getElementById(subMenuId) || mainMenu
+	}
+})
+
 // Home Page Scripts
 if (document.getElementById('home-page')) {
 	console.log('home-page')
